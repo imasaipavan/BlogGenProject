@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+
+	<listeners>
+		<listener
+			class-name="com.blogGen.qa.listeners.MyListeners" />
+	</listeners>
+	<test thread-count="5" name="Test">
+
+		<parameter name="browserName" value="Chrome" />
+		<parameter name="url"
+			value="https://dev.d21dyyvp31r0b2.amplifyapp.com/" />
+
+		<classes>
+		<class name="com.blogGen.qa.testcases.DeleteUserTest" />
+		  <!--<class name="com.blogGen.qa.testcases.AddProfileTest" />
+		  <class name="com.blogGen.qa.testcases.DeleteCategoryTest" />
+		    <class name="com.blogGen.qa.testcases.AddCategoryTest" />
+		    <class name="com.blogGen.qa.testcases.SearchInCategoriesTest" />
+		    <class name="com.blogGen.qa.testcases.SearchInBlogsTest" /> 
+			<class name="com.blogGen.qa.testcases.BlogLoginTest" />
+			<class name="com.blogGen.qa.testcases.ProfileEditTest" /> 
+			<class name="com.blogGen.qa.testcases.DashboardTest" />-->
+		</classes>
+	</test> <!-- Test -->
+</suite> <!-- Suite -->
